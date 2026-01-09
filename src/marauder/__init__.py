@@ -1,0 +1,1 @@
+"""Marauder - Offline Password Manager."""
