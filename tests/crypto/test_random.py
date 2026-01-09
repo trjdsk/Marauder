@@ -42,3 +42,4 @@ class TestGenerateRandomBytes:
         with pytest.raises(ValueError, match="Length must be at least 1"):
             generate_random_bytes(0)
 
+

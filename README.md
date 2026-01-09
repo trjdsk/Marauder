@@ -97,15 +97,6 @@ Run security analysis:
 bandit -r src/
 ```
 
-## Exit Criteria
-
-Milestone 0 is considered complete when all of the following criteria are met:
-
-- [x] Project installs cleanly: `pip install -e .` succeeds without errors
-- [x] Linting passes: `ruff check` returns no errors
-- [x] Formatting passes: `ruff format --check` returns no changes needed
-- [x] Bandit passes: `bandit -r src/` returns no high/critical severity issues
-- [x] Empty test suite runs: `pytest` executes successfully with 0 tests
 
 ## CI/CD Integration
 
@@ -124,4 +115,5 @@ The project structure is platform-agnostic and can be adapted to GitHub Actions,
 ## License
 
 MIT License
+
 

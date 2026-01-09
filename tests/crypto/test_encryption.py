@@ -133,3 +133,4 @@ class TestEncryption:
         decrypted = decrypt(ciphertext, nonce, key)
         assert decrypted == plaintext
 
+

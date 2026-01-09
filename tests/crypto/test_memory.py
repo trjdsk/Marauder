@@ -56,3 +56,4 @@ class TestMemoryZeroing:
         with pytest.raises(TypeError):
             secure_zero([1, 2, 3])
 
+

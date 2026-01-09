@@ -25,3 +25,4 @@ repos:
         args: ["-r", "src/", "-f", "json", "-o", "bandit-report.json"]
         additional_dependencies: ["bandit[toml]"]
 
+

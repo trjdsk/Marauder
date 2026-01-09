@@ -71,3 +71,4 @@ class TestKeyDerivation:
         # If someone passes a string, it should fail
         # (Argon2 will handle this, but we document bytes requirement)
 
+
