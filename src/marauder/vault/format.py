@@ -66,9 +66,10 @@ class VaultHeader(NamedTuple):
         return cls(magic=magic, version=version, salt=salt, nonce=nonce)
 
 
-def pack_vault(payload: bytes, key: bytes) -> bytes:
+def pack_vault(payload: bytes, key: bytes, header: VaultHeader | None = None) -> bytes:
     """Pack payload into vault format with header and encryption."""
-    header = VaultHeader.create()
+    if header is None:
+        header = VaultHeader.create()
     header_bytes = header.serialize()
 
     from marauder.crypto.encryption import AESGCM, KEY_LENGTH
